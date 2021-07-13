@@ -1,0 +1,11 @@
+To Install markdown Editor in your laptop inAtom.io 
+Install package -> language-markdown
+and for preview install package-> markdown-preview-plus
+and disable ->markdown-preview
+
+Open a markdown (.md) file and to preview that file use
+
+CTRL+SHIFT+M
+
+To study markdown language
+https://guides.github.com/features/mastering-markdown/

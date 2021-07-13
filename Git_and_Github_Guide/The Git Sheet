@@ -1,0 +1,53 @@
+1) git inti projectname-> To create a project.
+1 -a)git init will make a folder a git repository.
+2) git add filename.extrension -> To add a file.
+3) git clone "url" -> To clone a repository to our local repository.
+4) git pull -> To update an existing repository.
+5) git log -> To see all gthe commits that have happened from the biggining.
+6) git diff old_id new_id -> To see the difference between two particular commits about how the code has changed.
+
+
+	Note: 	The plus sign tell that something is added andf the minus sign tells that something is removed .
+7) git log --stat -> to view the changes in stats for for each of the particular files.
+8) git checkout id -> To reveret back to a state by removing the commits before the version labelled by the id.
+	Note: HEAD is the commit we are currently working on .
+		You are in 'detached HEAD' state. You can look around, make experimental
+		changes and commit them, and you can discard any commits you make in this
+		state without impacting any branches by performing another checkout.
+		It says to createa a separate branch to work for use where we can change what ever we want without affecting the others.
+8) git -b checkout id -> To make a new branch and make our changes there.
+9) git diff --staged -> show the diff between the file in the staging area and the repository.(stging area to the most recent commit)
+10) git reset --hard -> discard any change to the working directory and the staging area.
+11) git diff -> compares working directory with staging area.
+	Note :we can create label for each commit we made this is called branches.
+		Combining 2 branches is called merging.
+12) git branch -> shows the current branch.
+13) git branch name ->creates a branch with the given name.
+14) git checkout branch_name -> switch to the specified branch
+		Note: A branch created not by us is a remote branch for us.
+15) git log --graph --online first_branch second_branch -> compare the two branches by the commit akfter whicg they start differing
+16) git merge first_branch second_branchx-> combine two branches.
+	Note -> If this error occur.
+		Auto-merging file_name
+		CONFLICT (content): Merge conflict in file_name
+		Automatic merge failed; fix conflicts and then commit the result.
+		This error means that both the branches have changed the same part of the file. So git can not choose among them on who to choose.
+		Then do this:
+		1)Restore your files to their state before you started the merge by running git merge --abort.
+		2) Go to the branch u recently worked in and commit all the changes.
+		3) Try commiting again.
+17) git show -> To know the difference between a commit and its parent without knowing who commited it.
+18) git branch -d coins -> delete the branch . This will not delete the commits in the branch. 
+
+		Note: There is a scenario.
+			JAke -> A,B,C
+			Eman -> A,B',C
+			these are two branches . When we perform git merge then git can not judge which amon B,B' or both to keep.
+
+19) git remote ->To see all the current remotes.
+20) git remote add name_for_repository(recommended to be origin) URL_of _the_repos
+
+	Note : When we clone a repository git automatically creates a remote name origin for our repository. 
+
+
+	Note: To fork a repository we need to go to the repository and click fork button on the up-right.
